@@ -161,7 +161,7 @@ nav a:active {
     padding-top: 30px;
     margin: 100px;
     text-transform: uppercase;
-    font-family: Staatliches, sans-serif;
+    font-family: Pixelar, sans-serif;
     color: #f0f0f0;
 }
 
@@ -172,7 +172,7 @@ nav a:active {
     align-items: center;
     height: 100vh;
     position: relative;
-    background-color: #000;
+    background-color: #821131;
     padding: 20px;
     gap: 20px;
 }
@@ -183,6 +183,7 @@ nav a:active {
     align-items: center;    
     flex: 1;
     gap: 10px;
+    padding-left: 80px;
 }
 
 #current-game-title {
@@ -193,20 +194,26 @@ nav a:active {
     font-weight: bold;
     text-decoration: none;
     z-index: 2;
+    
 }
 
 #current-game-text {
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
-    font-family: Staatliches, sans-serif;
+    margin: 10px 30px;
+    font-family: pixelar, sans-serif;
     color: #fff;
     z-index: 2;
-    margin-top: 20px;
+    line-height: 1.8; /* Increase line-height for more space between lines */
+    text-transform: capitalize;
 }
+
+
 
 #current-game-image {
     width: 100%;
     max-width: 500px;
     flex: 1;
     margin-left: 50px;
+
 }
