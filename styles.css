@@ -27,6 +27,7 @@ body {
     text-align: center;
     color: #fff;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 * {
@@ -114,6 +115,7 @@ nav a:active {
     top: 0;
     left: 0;
     z-index: -2; 
+    background-color: #000;
 }
 
 #Hero-Section::before {
@@ -123,7 +125,8 @@ nav a:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #1A237Ecc, #8E24AAc9);
+   
+    background: linear-gradient(to bottom, #c7253dbd, #821131b5);
     z-index: -1; 
 }
 
@@ -147,22 +150,23 @@ nav a:active {
 }
 
 
-#about-text{
+.huge-title {
     font-size: 5rem;
     padding-top: 100px;
-    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(87, 20, 220), 0 0 0.2em rgb(11, 11, 116);
     text-transform: uppercase;
     font-family: Staatliches, sans-serif;
     color: #f0f0f0;
+    margin-bottom: 100px; 
+    text-align: center;
 }
 
 .brief-text {
     font-size: 2rem;
     padding-top: 30px;
-    margin: 100px;
+    margin: 80px 100px;
     text-transform: uppercase;
     font-family: Pixelar, sans-serif;
-    color: #f0f0f0;
+    color: #fff9;
 }
 
 #current-game {
@@ -216,4 +220,118 @@ nav a:active {
     flex: 1;
     margin-left: 50px;
 
+}
+
+#meet-the-team {
+    height: auto; /* Adjust height to fit content */
+    background-color: #000; /* Dark background for contrast */
+    padding: 50px 20px; /* Add padding for spacing */
+    /* Add margin to create space between the title and the team content */
+    margin-bottom: 50px; 
+}
+
+#team-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-items: center;
+}
+
+
+.team-member {
+    background: linear-gradient(135deg, #161D6F, #1a3ca3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px; /* Increased max width for better fit */
+    height: auto;
+}
+
+.team-member:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 183, 255, 0.5);
+}
+
+.developer-name {
+    font-size: 1.6rem; /* Adjusted font size for better fit */
+    font-family: Pixelar, sans-serif; 
+    color: #f0f0f0; /* Brighter text color */
+    margin-bottom: 10px;
+   
+}
+
+.developer-role {
+    font-size: 1.4rem; /* Adjusted font size for better fit */
+    font-family: Pixelar, sans-serif; 
+    color: #fff9;
+} 
+/* For tablet screens (768px and below) */
+@media (max-width: 768px) {
+    #current-game {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #current-game-content {
+        padding-left: 20px;
+    }
+
+    #current-game-title {
+        font-size: 3rem;
+    }
+
+    #current-game-text {
+        font-size: 1.4rem;
+        margin: 10px 20px;
+    }
+
+    #current-game-image {
+        margin-left: 0;
+        max-width: 400px;
+    }
+}
+
+/* For mobile screens (480px and below) */
+@media (max-width: 480px) {
+    #current-game {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #current-game-content {
+        padding-left: 10px;
+    }
+
+    #current-game-title {
+        font-size: 2.5rem;
+    }
+
+    #current-game-text {
+        font-size: 1.2rem;
+        margin: 5px 10px;
+    }
+
+    #current-game-image {
+        margin-left: 0;
+        max-width: 300px;
+    }
+}
+
+/* Responsive design for team section */
+@media (max-width: 768px) {
+    #team-content {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+}
+
+/* For mobile screens (480px and below) */
+@media (max-width: 480px) {
+    #team-content {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
 }
