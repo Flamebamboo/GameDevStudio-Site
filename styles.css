@@ -227,7 +227,7 @@ nav a:active {
     background-color: #000; /* Dark background for contrast */
     padding: 50px 20px; /* Add padding for spacing */
     /* Add margin to create space between the title and the team content */
-    margin-bottom: 50px; 
+
 }
 
 #team-content {
@@ -268,6 +268,22 @@ nav a:active {
     font-family: Pixelar, sans-serif; 
     color: #fff9;
 } 
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 80px 0;
+    border-top: 1px solid #191919;
+}
+
+.footer p {
+    text-align: center;
+    font-family: Pixelar, sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* For tablet screens (768px and below) */
 @media (max-width: 768px) {
     #current-game {
