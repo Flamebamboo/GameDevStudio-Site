@@ -21,6 +21,13 @@
     src: url(Staatliches-Regular.ttf);
     font-display: swap;
 }
+
+
+:root {
+    --primary-color: #0B192C;
+    --secondary-color: #821131;
+    --light-text: #fff9;
+}
 body {
     font-size: 16px;
     line-height: 1.5;
@@ -138,7 +145,7 @@ nav a:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #f0f0f0; 
+    color: #fff; 
     font-weight: bold; 
     text-decoration: none; 
 }
@@ -146,7 +153,7 @@ nav a:active {
 
 #about-us {
     height: 80vh;
-    background-color: black;
+    background-color: var(--primary-color);
 }
 
 
@@ -155,9 +162,14 @@ nav a:active {
     padding-top: 100px;
     text-transform: uppercase;
     font-family: Staatliches, sans-serif;
-    color: #f0f0f0;
+    color: #fff;
     margin-bottom: 100px; 
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #821131;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
 }
 
 .brief-text {
@@ -166,7 +178,7 @@ nav a:active {
     margin: 80px 100px;
     text-transform: uppercase;
     font-family: Pixelar, sans-serif;
-    color: #fff9;
+    color: var(--light-text);
 }
 
 #current-game {
@@ -176,7 +188,7 @@ nav a:active {
     align-items: center;
     height: 100vh;
     position: relative;
-    background-color: #821131;
+    background-color: var(--secondary-color);
     padding: 20px;
     gap: 20px;
 }
@@ -224,7 +236,7 @@ nav a:active {
 
 #meet-the-team {
     height: auto; /* Adjust height to fit content */
-    background-color: #000; /* Dark background for contrast */
+    background-color: var(--primary-color); /* Dark background for contrast */
     padding: 50px 20px; /* Add padding for spacing */
     /* Add margin to create space between the title and the team content */
 
@@ -266,8 +278,44 @@ nav a:active {
 .developer-role {
     font-size: 1.4rem; /* Adjusted font size for better fit */
     font-family: Pixelar, sans-serif; 
-    color: #fff9;
+    color: var(--light-text);
 } 
+
+
+#contact-us {
+    height: 80vh;
+    background-color: var(--primary-color);
+}
+
+#social-media-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#social-media-links a svg{
+    height: 130px;
+    width: auto;
+    fill: var(--accent-color);
+}
+
+.social-media-title {
+    font-size: 3rem;
+    font-family: Pixelar, sans-serif;
+    color: var(--light-text);
+    padding-top: 30px;
+}
+
+
+.social-media-text {
+    font-size: 1.5rem;
+    font-family: Pixelar, sans-serif;
+    color: var(--light-text);
+}
+
 
 .footer {
     background-color: #000000;
