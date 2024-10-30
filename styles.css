@@ -249,10 +249,25 @@ nav a:active {
     line-height: 1.5;
 }
 
-#current-game-section img {
-    width: 35%;
+.slider img {
+    display: none;
+}
+
+
+img.displaySlide{
+    width: 100%;
     height: auto;
     padding-bottom: 200px;
+    display: block;
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5;}
+    to {
+        opacity: 1;
+    }
 }
 
 #current-game-section button {
